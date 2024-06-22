@@ -1,5 +1,5 @@
 const boxContent = `
-            <div class="d-flex flex-row flex-md-column flex-wrap gap-0 gap-md-5" id="titleContent">
+            <div class="d-flex flex-row flex-md-column flex-wrap column-gap-3  gap-md-5" id="titleContent">
                
             </div>
             <div class="d-flex flex-column h-100"   id="articleContent">

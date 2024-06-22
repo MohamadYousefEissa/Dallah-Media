@@ -15,6 +15,7 @@ header a {
           text-decoration: underline transparent;
   text-underline-offset: 6px;
   transition: color 0.3s;
+  font-size: 13px;
 }
 header a:hover {
   color: gold;
@@ -49,9 +50,12 @@ header .active {
 
 #bottom-bar {
   background: rgb(40, 40, 40);
-  padding: 1px 2vw;
-  margin-bottom: 5rem;
   border-radius: 0 0 1.5rem 1.5rem;
+}
+#bottom-bar ul {
+  display: flex;
+  align-items: center;
+  padding: 0.5vw 1.5rem;
 }
 #bottom-bar a {
   color: white;
@@ -63,6 +67,24 @@ header .active {
   color: gold;
 }
 
+@media screen and (max-width: 480px) {
+  #bottom-bar ul {
+    padding: 1rem 2rem;
+  }
+  #bottom-bar a {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 400px) {
+  header a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 374px) {
+  header .active {
+    font-weight: normal;
+  }
+}
 #bottom-bar a {
   font-size: 14px;
 }
@@ -133,10 +155,5 @@ header .active {
 @media screen and (max-width: 1024px) {
   #box {
     height: 400px;
-  }
-  #bottom-bar a {
-    font-size: 12px;
-    margin-left: 1rem;
-    margin-top: 10px;
   }
 }/*# sourceMappingURL=our-works.css.map */

@@ -34,11 +34,6 @@ header .active {
   font-weight: bold;
 }
 
-@media screen and (min-width: 400px) {
-  header a {
-    font-size: 16px;
-  }
-}
 #box {
   width: 100%;
   height: 30vw;
@@ -55,9 +50,12 @@ header .active {
 
 #bottom-bar {
   background: rgb(40, 40, 40);
-  padding: 1px 2vw;
-  margin-bottom: 5rem;
   border-radius: 0 0 1.5rem 1.5rem;
+}
+#bottom-bar ul {
+  display: flex;
+  align-items: center;
+  padding: 0.5vw 1.5rem;
 }
 #bottom-bar a {
   color: white;
@@ -67,4 +65,23 @@ header .active {
 }
 #bottom-bar a:hover {
   color: gold;
+}
+
+@media screen and (max-width: 480px) {
+  #bottom-bar ul {
+    padding: 1rem 2rem;
+  }
+  #bottom-bar a {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 400px) {
+  header a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 374px) {
+  header .active {
+    font-weight: normal;
+  }
 }/*# sourceMappingURL=main.css.map */

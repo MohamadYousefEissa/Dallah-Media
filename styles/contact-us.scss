@@ -27,7 +27,7 @@ form {
     label {
         margin-bottom: 0.6rem;
         font-weight: 600;
-        font-size: 1.2vw;
+        font-size: 1vw;
         cursor: pointer;
     }
 
@@ -66,8 +66,8 @@ form {
 }
 
 .customCheckBoxHolder {
-    margin: 5px;
     display: flex;
+    margin-right: 4px;
 }
 
 .customCheckBox {
@@ -157,7 +157,7 @@ form {
         padding: 2rem;
 
         label {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         button {
@@ -165,9 +165,9 @@ form {
         }
     }
 
-    #bottom-bar {
-        a {
-            font-size: 14px;
-        }
+    .map-cont {
+        position: static;
+        margin: 0;
+        margin-left: 2rem;
     }
 }

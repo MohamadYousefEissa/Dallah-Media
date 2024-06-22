@@ -15,6 +15,7 @@ header a {
           text-decoration: underline transparent;
   text-underline-offset: 6px;
   transition: color 0.3s;
+  font-size: 13px;
 }
 header a:hover {
   color: gold;
@@ -49,9 +50,12 @@ header .active {
 
 #bottom-bar {
   background: rgb(40, 40, 40);
-  padding: 1px 2vw;
-  margin-bottom: 5rem;
   border-radius: 0 0 1.5rem 1.5rem;
+}
+#bottom-bar ul {
+  display: flex;
+  align-items: center;
+  padding: 0.5vw 1.5rem;
 }
 #bottom-bar a {
   color: white;
@@ -63,6 +67,24 @@ header .active {
   color: gold;
 }
 
+@media screen and (max-width: 480px) {
+  #bottom-bar ul {
+    padding: 1rem 2rem;
+  }
+  #bottom-bar a {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 400px) {
+  header a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 374px) {
+  header .active {
+    font-weight: normal;
+  }
+}
 span {
   width: 100%;
   font-weight: lighter;
@@ -88,7 +110,7 @@ span:last-of-type:hover {
 form label {
   margin-bottom: 0.6rem;
   font-weight: 600;
-  font-size: 1.2vw;
+  font-size: 1vw;
   cursor: pointer;
 }
 form input {
@@ -122,8 +144,8 @@ form button {
 }
 
 .customCheckBoxHolder {
-  margin: 5px;
   display: flex;
+  margin-right: 4px;
 }
 
 .customCheckBox {
@@ -211,12 +233,14 @@ form button {
     padding: 2rem;
   }
   form label {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   form button {
     font-size: 1.2rem;
   }
-  #bottom-bar a {
-    font-size: 14px;
+  .map-cont {
+    position: static;
+    margin: 0;
+    margin-left: 2rem;
   }
 }/*# sourceMappingURL=contact-us.css.map */

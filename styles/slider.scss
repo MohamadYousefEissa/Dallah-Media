@@ -8,7 +8,6 @@
 }
 
 #titleContent span {
-    width: 100%;
     font-weight: lighter;
     font-size: 5vw;
     color: $text-sec-25;
@@ -59,9 +58,14 @@ article {
         margin-top: 3rem;
     }
 
-    #titleContent span {
-        font-size: 2rem;
-        text-wrap: nowrap;
+    #titleContent {
+        width: 100%;
+
+        span {
+
+            font-size: 2rem;
+            text-wrap: nowrap;
+        }
     }
 
     article {
@@ -74,8 +78,8 @@ article {
     }
 
     #bottom-bar {
-        a {
-            font-size: 12px;
+        ul {
+            padding: 1rem 1rem;
         }
     }
 
