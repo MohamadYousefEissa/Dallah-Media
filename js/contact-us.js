@@ -1,6 +1,7 @@
-const inputs = document.querySelectorAll("input:not([type='checkbox'])");
-const ftitle = document.querySelector(".first-title");
-const stitle = document.querySelector(".second-title");
+const box = document.querySelector("#box");
+const inputs = box.querySelectorAll("input:not([type='checkbox'])");
+const ftitle = box.querySelector(".first-title");
+const stitle = box.querySelector(".second-title");
 inputs.forEach((input) => {
   input.addEventListener("input", () => {
     ftitle.innerText = "collabration";
@@ -16,4 +17,11 @@ stitle.addEventListener("click", () => {
   stitle.classList.add("active-title");
   stitle.innerHTML = "let's go";
   stitle.scrollIntoView({ behavior: "smooth" });
+});
+
+box.addEventListener("scroll", () => {
+  if (box.scrollTop > 220) {
+    stitle.classList.add("active-title");
+    stitle.innerHTML = "let's go";
+  }
 });
