@@ -1,0 +1,101 @@
+@use "./main.scss" as *;
+
+#bottom-bar {
+    a {
+        font-size: 14px;
+    }
+}
+
+.item {
+    margin-bottom: 4rem;
+    cursor: pointer;
+
+    span {
+        position: relative;
+        color: $text-primary;
+        margin-bottom: 10px;
+        margin-left: calc(1vw + 2rem);
+    }
+
+    img {
+        position: relative;
+        width: 320px;
+        height: 250px;
+        border-radius: 15px;
+    }
+}
+
+.selectedItem {
+    h1 {
+        color: $text-primary;
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+
+    article {
+        color: $text-sec;
+    }
+
+    .other-item {
+        width: 200px;
+        height: 160px;
+        border-radius: 20px;
+        background: red;
+    }
+
+    iframe {
+        min-height: 450px;
+    }
+}
+
+#cases-container {
+    div {
+        position: relative;
+    }
+
+    span {
+        left: 10px;
+        bottom: 10px;
+        position: absolute;
+        cursor: pointer;
+        filter: brightness(150%);
+    }
+
+    img {
+        width: 200px;
+        height: 160px;
+        border-radius: 20px;
+        filter: brightness(40%);
+        cursor: pointer;
+        transition: filter 0.3s;
+
+        &:hover,
+        &:hover~span {
+            filter: brightness(100%);
+            color: $text-primary;
+        }
+    }
+
+}
+
+@include responsive("tablet") {
+    .item span {
+        margin-left: 4vw;
+    }
+
+
+}
+
+@media screen and (max-width:1024px) {
+    #box {
+        height: 400px;
+    }
+
+    #bottom-bar {
+        a {
+            font-size: 12px;
+            margin-left: 1rem;
+            margin-top: 10px;
+        }
+    }
+}

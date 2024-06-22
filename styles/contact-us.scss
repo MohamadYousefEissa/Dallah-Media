@@ -1,0 +1,173 @@
+@use "./main.scss" as *;
+
+span {
+    width: 100%;
+    font-weight: lighter;
+    font-size: 5vw;
+    color: $text-sec-25;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+span:first-of-type {
+    cursor: default;
+}
+
+span:last-of-type:hover {
+    color: gold;
+}
+
+.active-title {
+    font-weight: normal;
+    color: $text-primary;
+}
+
+form {
+
+    label {
+        margin-bottom: 0.6rem;
+        font-weight: 600;
+        font-size: 1.2vw;
+        cursor: pointer;
+    }
+
+    input {
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid $text-sec-25;
+        margin-bottom: 1rem;
+        color: $text-primary;
+        font-weight: bold;
+    }
+
+    textarea {
+        background: transparent;
+        outline: 0;
+        border: 1px solid $text-sec-25;
+        color: $text-primary;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+
+    }
+
+    button {
+        font-size: 1.3vw;
+        font-weight: bold;
+        background: transparent;
+        outline: 0;
+        border: 0;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        color: $text-primary;
+        text-align: start;
+    }
+}
+
+.customCheckBoxHolder {
+    margin: 5px;
+    display: flex;
+}
+
+.customCheckBox {
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    padding: 3px 8px;
+    background-color: transparent;
+    color: $text-sec;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: color, background-color, box-shadow;
+    display: flex;
+    min-width: 55px;
+    align-items: center;
+    outline: none;
+    justify-content: center;
+    border: 1px solid $text-sec;
+    border-radius: 30px;
+}
+
+.customCheckBox:hover {
+    background-color: #2c2c2c;
+
+}
+
+.customCheckBox .inner {
+    font-size: 12px;
+    pointer-events: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: transform;
+    transform: translateY(0px);
+}
+
+.customCheckBoxInput {
+    display: none;
+}
+
+.customCheckBoxInput:checked+.customCheckBoxWrapper .customCheckBox {
+    background-color: $text-primary;
+    color: black;
+
+}
+
+.information {
+    font-weight: bold;
+    margin: 0;
+    margin-top: 4px;
+    font-size: 12px;
+
+    &,
+    a {
+        color: $text-primary;
+        text-decoration: none;
+    }
+}
+
+.information-title {
+    color: $text-sec;
+    margin: 0;
+    margin-top: 30px;
+    filter: brightness(150%);
+    font-size: 12px;
+}
+
+.map-cont {
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 14vw;
+    border-radius: 1.5rem;
+}
+
+@include responsive("mobile") {
+    #box {
+        min-height: 400px;
+    }
+
+    .form-cont {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    form {
+        padding: 2rem;
+
+        label {
+            font-size: 1.2rem;
+        }
+
+        button {
+            font-size: 1.2rem;
+        }
+    }
+
+    #bottom-bar {
+        a {
+            font-size: 14px;
+        }
+    }
+}

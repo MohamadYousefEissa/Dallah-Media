@@ -1,0 +1,142 @@
+body {
+  background: black url("../images/bg.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+header {
+  background: transparent;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  outline: 0;
+  -webkit-text-decoration: underline transparent;
+          text-decoration: underline transparent;
+  text-underline-offset: 6px;
+  transition: color 0.3s;
+}
+header a:hover {
+  color: gold;
+}
+header img {
+  width: 150px;
+}
+header ul {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  row-gap: 1rem;
+}
+header .active {
+  color: gold;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#box {
+  width: 100%;
+  height: 30vw;
+  margin-top: 5vw;
+  color: rgb(130, 130, 130);
+  background: rgb(40, 40, 40);
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 3vw 1vw;
+  overflow-y: scroll;
+}
+#box::-webkit-scrollbar {
+  display: none;
+}
+
+#bottom-bar {
+  background: rgb(40, 40, 40);
+  padding: 1px 2vw;
+  margin-bottom: 5rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+#bottom-bar a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 1vw;
+}
+#bottom-bar a:hover {
+  color: gold;
+}
+
+#bottom-bar a {
+  font-size: 14px;
+}
+
+.item {
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+.item span {
+  position: relative;
+  color: gold;
+  margin-bottom: 10px;
+  margin-left: calc(1vw + 2rem);
+}
+.item img {
+  position: relative;
+  width: 320px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.selectedItem h1 {
+  color: gold;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.selectedItem article {
+  color: rgb(130, 130, 130);
+}
+.selectedItem .other-item {
+  width: 200px;
+  height: 160px;
+  border-radius: 20px;
+  background: red;
+}
+.selectedItem iframe {
+  min-height: 450px;
+}
+
+#cases-container div {
+  position: relative;
+}
+#cases-container span {
+  left: 10px;
+  bottom: 10px;
+  position: absolute;
+  cursor: pointer;
+  filter: brightness(150%);
+}
+#cases-container img {
+  width: 200px;
+  height: 160px;
+  border-radius: 20px;
+  filter: brightness(40%);
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+#cases-container img:hover, #cases-container img:hover ~ span {
+  filter: brightness(100%);
+  color: gold;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .item span {
+    margin-left: 4vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #box {
+    height: 400px;
+  }
+  #bottom-bar a {
+    font-size: 12px;
+    margin-left: 1rem;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=our-works.css.map */

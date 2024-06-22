@@ -1,0 +1,135 @@
+body {
+  background: black url("../images/bg.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+header {
+  background: transparent;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  outline: 0;
+  -webkit-text-decoration: underline transparent;
+          text-decoration: underline transparent;
+  text-underline-offset: 6px;
+  transition: color 0.3s;
+}
+header a:hover {
+  color: gold;
+}
+header img {
+  width: 150px;
+}
+header ul {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  row-gap: 1rem;
+}
+header .active {
+  color: gold;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#box {
+  width: 100%;
+  height: 30vw;
+  margin-top: 5vw;
+  color: rgb(130, 130, 130);
+  background: rgb(40, 40, 40);
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 3vw 1vw;
+  overflow-y: scroll;
+}
+#box::-webkit-scrollbar {
+  display: none;
+}
+
+#bottom-bar {
+  background: rgb(40, 40, 40);
+  padding: 1px 2vw;
+  margin-bottom: 5rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+#bottom-bar a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 1vw;
+}
+#bottom-bar a:hover {
+  color: gold;
+}
+
+.active-title {
+  color: gold !important;
+  font-weight: normal !important;
+}
+
+#titleContent span {
+  width: 100%;
+  font-weight: lighter;
+  font-size: 5vw;
+  color: rgba(130, 130, 130, 0.3);
+  transition: color 0.3s;
+  cursor: pointer;
+}
+#titleContent span:hover {
+  color: gold;
+}
+
+article {
+  margin-bottom: 5vw;
+  font-size: 0.8vw;
+}
+article h6 {
+  font-size: 0.8vw;
+}
+
+#articleContent {
+  width: 35%;
+}
+
+#titleContent {
+  width: 40%;
+}
+
+.fixed-img img {
+  position: absolute;
+  margin-left: 10vw;
+  margin-top: 9vw;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 1.5rem;
+  background: gold;
+}
+
+@media screen and (max-width: 479px) {
+  #box {
+    min-height: 400px;
+    padding: 1rem;
+  }
+  #articleContent {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  #titleContent span {
+    font-size: 2rem;
+    text-wrap: nowrap;
+  }
+  article {
+    margin-bottom: 5vw;
+    font-size: 1rem;
+  }
+  article h6 {
+    font-size: 1rem;
+  }
+  #bottom-bar a {
+    font-size: 12px;
+  }
+  .fixed-img img {
+    display: none;
+  }
+}/*# sourceMappingURL=slider.css.map */

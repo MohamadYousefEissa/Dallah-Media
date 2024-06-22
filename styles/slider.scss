@@ -1,0 +1,85 @@
+@use "./main.scss" as *;
+
+
+.active-title {
+    color: $text-primary !important;
+    font-weight: normal !important;
+
+}
+
+#titleContent span {
+    width: 100%;
+    font-weight: lighter;
+    font-size: 5vw;
+    color: $text-sec-25;
+    transition: color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        color: $text-primary;
+    }
+}
+
+article {
+    margin-bottom: 5vw;
+    font-size: 0.8vw;
+
+    h6 {
+        font-size: 0.8vw;
+    }
+}
+
+#articleContent {
+    width: 35%;
+}
+
+#titleContent {
+    width: 40%;
+}
+
+
+.fixed-img img {
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 9vw;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 1.5rem;
+    background: $text-primary;
+}
+
+@include responsive("mobile") {
+    #box {
+        min-height: 400px;
+        padding: 1rem;
+    }
+
+    #articleContent {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    #titleContent span {
+        font-size: 2rem;
+        text-wrap: nowrap;
+    }
+
+    article {
+        margin-bottom: 5vw;
+        font-size: 1rem;
+
+        h6 {
+            font-size: 1rem;
+        }
+    }
+
+    #bottom-bar {
+        a {
+            font-size: 12px;
+        }
+    }
+
+    .fixed-img img {
+        display: none;
+    }
+}
