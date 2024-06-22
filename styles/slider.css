@@ -154,6 +154,9 @@ article h6 {
     padding: 1rem 1rem;
   }
   .fixed-img img {
-    display: none;
+    position: static;
+    margin: 0;
+    width: 100%;
+    height: 100%;
   }
 }/*# sourceMappingURL=slider.css.map */
