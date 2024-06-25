@@ -85,8 +85,11 @@ header .active {
 }
 
 @media screen and (max-width: 480px) {
+  #box {
+    height: 400px;
+  }
   #bottom-bar ul {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
   #bottom-bar a {
     font-size: 14px;
@@ -155,7 +158,6 @@ header .active {
 
 @media screen and (max-width: 479px) {
   #box {
-    min-height: 400px;
     padding: 1rem;
   }
   #articleContent {

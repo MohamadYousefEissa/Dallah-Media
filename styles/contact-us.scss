@@ -174,17 +174,13 @@ form {
 }
 
 @include responsive("mobile") {
-    #box {
-        min-height: 400px;
-    }
-
     .form-cont {
         width: 100% !important;
         margin: 0 !important;
     }
 
     form {
-        padding: 2rem;
+        padding: 1rem;
 
         label {
             font-size: 1rem;

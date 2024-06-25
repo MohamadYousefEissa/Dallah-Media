@@ -1,11 +1,5 @@
 @use "./main.scss" as *;
 
-#bottom-bar {
-    a {
-        font-size: 14px;
-    }
-}
-
 .item {
     margin-bottom: 4rem;
     cursor: pointer;
@@ -138,13 +132,4 @@
     .item span {
         margin-left: 4vw;
     }
-
-
-}
-
-@media screen and (max-width:1024px) {
-    #box {
-        height: 400px;
-    }
-
 }

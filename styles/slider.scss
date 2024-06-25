@@ -4,7 +4,6 @@
 .active-title {
     color: $text-primary !important;
     font-weight: bold !important;
-
 }
 
 #titleContent span {
@@ -62,7 +61,6 @@
 
 @include responsive("mobile") {
     #box {
-        min-height: 400px;
         padding: 1rem;
     }
 
