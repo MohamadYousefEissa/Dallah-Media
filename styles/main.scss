@@ -10,29 +10,32 @@
       @content;
     }
   }
-
-  @else if $device=="laptop" {
-    @media screen and (min-width: 1024px) {
-      @content;
-    }
-  }
-
-  @else if $device=="ipad" {
-    @media screen and (min-width: 551px) and (max-width: 1023px) and (min-height: 1000px) and (max-height: 1400px) {
-      @content;
-    }
-  }
 }
 
 $bg-primary: rgb(40, 40, 40);
-$text-primary: gold;
-$text-sec: rgb(130, 130, 130);
-$text-sec-25: rgba(130, 130, 130, 0.3);
+$text-primary: #FFF04B;
+$text-sec: #AAAAAA;
+$text-sec-25: #555555;
+
+
+@font-face {
+  font-family: "nexa light";
+  src: url(../fonts/Nexa-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "nexa bold";
+  src: url(../fonts/Nexa-Heavy.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap');
+
 
 body {
   background: black url("../images/bg.jpg") center no-repeat;
   background-size: cover;
   min-height: 100vh;
+  font-family: "nexa light";
 }
 
 header {
@@ -99,6 +102,7 @@ header {
     text-decoration: none;
     transition: color 0.2s;
     font-size: 1vw;
+    font-weight: bold;
 
     &:hover {
       color: $text-primary;

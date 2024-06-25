@@ -15,6 +15,7 @@
         color: $text-primary;
         margin-bottom: 10px;
         margin-left: calc(1vw + 2rem);
+        font-weight: bold;
     }
 
     img {
@@ -28,12 +29,21 @@
 .selectedItem {
     h1 {
         color: $text-primary;
-        font-weight: 400;
+        font-weight: bold;
         margin-bottom: 2rem;
+    }
+
+    h4 {
+        color: $text-sec-25;
+        font-weight: bold;
     }
 
     article {
         color: $text-sec;
+
+        p {
+            font-family: "Anek Devanagari", sans-serif;
+        }
     }
 
     .other-item {
@@ -51,6 +61,17 @@
 #cases-container {
     div {
         position: relative;
+        border-radius: 20px;
+
+        &:hover {
+            img {
+                filter: brightness(100%);
+            }
+
+            span {
+                color: $text-primary;
+            }
+        }
     }
 
     span {
@@ -58,7 +79,8 @@
         bottom: 10px;
         position: absolute;
         cursor: pointer;
-        filter: brightness(150%);
+        color: $text-sec-25;
+        font-family: "Anek Devanagari", sans-serif;
     }
 
     img {
@@ -68,12 +90,6 @@
         filter: brightness(40%);
         cursor: pointer;
         transition: filter 0.3s;
-
-        &:hover,
-        &:hover~span {
-            filter: brightness(100%);
-            color: $text-primary;
-        }
     }
 
 }

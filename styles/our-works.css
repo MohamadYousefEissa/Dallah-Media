@@ -1,7 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap");
+@font-face {
+  font-family: "nexa light";
+  src: url(../fonts/Nexa-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "nexa bold";
+  src: url(../fonts/Nexa-Heavy.ttf);
+}
 body {
   background: black url("../images/bg.jpg") center no-repeat;
   background-size: cover;
   min-height: 100vh;
+  font-family: "nexa light";
 }
 
 header {
@@ -18,7 +28,7 @@ header a {
   font-size: 13px;
 }
 header a:hover {
-  color: gold;
+  color: #FFF04B;
 }
 header img {
   width: 150px;
@@ -29,7 +39,7 @@ header ul {
   row-gap: 1rem;
 }
 header .active {
-  color: gold;
+  color: #FFF04B;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -38,7 +48,7 @@ header .active {
   width: 100%;
   height: 30vw;
   margin-top: 5vw;
-  color: rgb(130, 130, 130);
+  color: #AAAAAA;
   background: rgb(40, 40, 40);
   border-radius: 1.5rem 1.5rem 0 0;
   padding: 3vw 1vw;
@@ -62,9 +72,10 @@ header .active {
   text-decoration: none;
   transition: color 0.2s;
   font-size: 1vw;
+  font-weight: bold;
 }
 #bottom-bar a:hover {
-  color: gold;
+  color: #FFF04B;
 }
 
 @media screen and (max-width: 480px) {
@@ -95,9 +106,10 @@ header .active {
 }
 .item span {
   position: relative;
-  color: gold;
+  color: #FFF04B;
   margin-bottom: 10px;
   margin-left: calc(1vw + 2rem);
+  font-weight: bold;
 }
 .item img {
   position: relative;
@@ -107,12 +119,19 @@ header .active {
 }
 
 .selectedItem h1 {
-  color: gold;
-  font-weight: 400;
+  color: #FFF04B;
+  font-weight: bold;
   margin-bottom: 2rem;
 }
+.selectedItem h4 {
+  color: #555555;
+  font-weight: bold;
+}
 .selectedItem article {
-  color: rgb(130, 130, 130);
+  color: #AAAAAA;
+}
+.selectedItem article p {
+  font-family: "Anek Devanagari", sans-serif;
 }
 .selectedItem .other-item {
   width: 200px;
@@ -126,13 +145,21 @@ header .active {
 
 #cases-container div {
   position: relative;
+  border-radius: 20px;
+}
+#cases-container div:hover img {
+  filter: brightness(100%);
+}
+#cases-container div:hover span {
+  color: #FFF04B;
 }
 #cases-container span {
   left: 10px;
   bottom: 10px;
   position: absolute;
   cursor: pointer;
-  filter: brightness(150%);
+  color: #555555;
+  font-family: "Anek Devanagari", sans-serif;
 }
 #cases-container img {
   width: 200px;
@@ -141,10 +168,6 @@ header .active {
   filter: brightness(40%);
   cursor: pointer;
   transition: filter 0.3s;
-}
-#cases-container img:hover, #cases-container img:hover ~ span {
-  filter: brightness(100%);
-  color: gold;
 }
 
 @media screen and (min-width: 480px) and (max-width: 1023px) {

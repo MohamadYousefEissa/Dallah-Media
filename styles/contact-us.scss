@@ -14,20 +14,19 @@ span:first-of-type {
 }
 
 span:last-of-type:hover {
-    color: gold;
+    color: $text-primary;
 }
 
 .active-title {
-    font-weight: normal;
+    font-weight: bold;
     color: $text-primary;
 }
 
 form {
-
     label {
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.6vw;
         font-weight: 600;
-        font-size: 1vw;
+        font-size: 0.8vw;
         cursor: pointer;
     }
 
@@ -36,9 +35,10 @@ form {
         outline: 0;
         background: transparent;
         border-bottom: 1px solid $text-sec-25;
-        margin-bottom: 1rem;
+        margin-bottom: 1vw;
         color: $text-primary;
         font-weight: bold;
+        font-size: 1.2vw;
     }
 
     textarea {
@@ -47,9 +47,9 @@ form {
         border: 1px solid $text-sec-25;
         color: $text-primary;
         padding: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1vw;
         font-weight: bold;
-
+        font-size: 1.2vw;
     }
 
     button {
@@ -64,6 +64,8 @@ form {
         text-align: start;
     }
 }
+
+
 
 .customCheckBoxHolder {
     display: flex;
@@ -97,7 +99,7 @@ form {
 }
 
 .customCheckBox .inner {
-    font-size: 12px;
+    font-size: 0.8vw;
     pointer-events: none;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 300ms;
@@ -116,10 +118,11 @@ form {
 }
 
 .information {
-    font-weight: bold;
+    font-family: "nexa bold";
+    font-weight: 600;
     margin: 0;
     margin-top: 4px;
-    font-size: 12px;
+    font-size: 1vw;
 
     &,
     a {
@@ -132,15 +135,37 @@ form {
     color: $text-sec;
     margin: 0;
     margin-top: 30px;
-    filter: brightness(150%);
-    font-size: 12px;
+    font-size: 1vw;
+    font-weight: bold;
 }
 
 .map-cont {
-    position: absolute;
-    margin-left: 10vw;
-    margin-top: 14vw;
-    border-radius: 1.5rem;
+    position: relative;
+
+    img {
+        position: absolute;
+        margin-left: 10vw;
+        margin-top: 14.5vw;
+        width: 12vw;
+        height: 12vw;
+        border-radius: 1.5rem;
+        background: $text-primary;
+    }
+
+    p {
+        position: absolute;
+        margin-left: 12.8vw;
+        margin-top: 20vw;
+        text-wrap: nowrap;
+        font-size: 0.8vw;
+        color: $text-primary;
+        text-decoration: underline;
+        text-underline-offset: 0.3vw;
+    }
+
+    a {
+        outline: 0;
+    }
 }
 
 @include responsive("mobile") {
@@ -158,16 +183,53 @@ form {
 
         label {
             font-size: 1rem;
+            margin-bottom: 0.6rem;
+        }
+
+        input {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        textarea {
+            font-size: 1rem;
         }
 
         button {
             font-size: 1.2rem;
         }
+
+        .customCheckBox .inner {
+            font-size: 14px;
+        }
+
+        .information,
+        .information-title {
+            font-size: 1.2rem;
+        }
     }
 
     .map-cont {
-        position: static;
-        margin: 0;
-        margin-left: 2rem;
+        padding: 1rem;
+
+        img {
+            position: static;
+            justify-content: start;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        p {
+            // margin-left: 6.5rem;
+            // margin-top: -12rem;
+            margin: 0;
+            margin-left: -13.5vw;
+            margin-top: -2vw;
+            font-size: 5vw;
+            text-underline-offset: 1.5vw;
+            transform: translate(-50%, -50%);
+            inset: 50%;
+        }
     }
 }

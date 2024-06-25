@@ -1,7 +1,16 @@
+@font-face {
+  font-family: "nexa light";
+  src: url(../fonts/Nexa-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "nexa bold";
+  src: url(../fonts/Nexa-Heavy.ttf);
+}
 body {
   background: black url("../images/bg.jpg") center no-repeat;
   background-size: cover;
   min-height: 100vh;
+  font-family: "nexa light";
 }
 
 header {
@@ -18,7 +27,7 @@ header a {
   font-size: 13px;
 }
 header a:hover {
-  color: gold;
+  color: #FFF04B;
 }
 header img {
   width: 150px;
@@ -29,7 +38,7 @@ header ul {
   row-gap: 1rem;
 }
 header .active {
-  color: gold;
+  color: #FFF04B;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -38,7 +47,7 @@ header .active {
   width: 100%;
   height: 30vw;
   margin-top: 5vw;
-  color: rgb(130, 130, 130);
+  color: #AAAAAA;
   background: rgb(40, 40, 40);
   border-radius: 1.5rem 1.5rem 0 0;
   padding: 3vw 1vw;
@@ -62,9 +71,10 @@ header .active {
   text-decoration: none;
   transition: color 0.2s;
   font-size: 1vw;
+  font-weight: bold;
 }
 #bottom-bar a:hover {
-  color: gold;
+  color: #FFF04B;
 }
 
 @media screen and (max-width: 480px) {
@@ -89,7 +99,7 @@ span {
   width: 100%;
   font-weight: lighter;
   font-size: 5vw;
-  color: rgba(130, 130, 130, 0.3);
+  color: #555555;
   cursor: pointer;
   transition: color 0.3s;
 }
@@ -99,37 +109,39 @@ span:first-of-type {
 }
 
 span:last-of-type:hover {
-  color: gold;
+  color: #FFF04B;
 }
 
 .active-title {
-  font-weight: normal;
-  color: gold;
+  font-weight: bold;
+  color: #FFF04B;
 }
 
 form label {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.6vw;
   font-weight: 600;
-  font-size: 1vw;
+  font-size: 0.8vw;
   cursor: pointer;
 }
 form input {
   border: 0;
   outline: 0;
   background: transparent;
-  border-bottom: 1px solid rgba(130, 130, 130, 0.3);
-  margin-bottom: 1rem;
-  color: gold;
+  border-bottom: 1px solid #555555;
+  margin-bottom: 1vw;
+  color: #FFF04B;
   font-weight: bold;
+  font-size: 1.2vw;
 }
 form textarea {
   background: transparent;
   outline: 0;
-  border: 1px solid rgba(130, 130, 130, 0.3);
-  color: gold;
+  border: 1px solid #555555;
+  color: #FFF04B;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
   font-weight: bold;
+  font-size: 1.2vw;
 }
 form button {
   font-size: 1.3vw;
@@ -139,7 +151,7 @@ form button {
   border: 0;
   text-decoration: underline;
   text-underline-offset: 6px;
-  color: gold;
+  color: #FFF04B;
   text-align: start;
 }
 
@@ -159,7 +171,7 @@ form button {
           user-select: none;
   padding: 3px 8px;
   background-color: transparent;
-  color: rgb(130, 130, 130);
+  color: #AAAAAA;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 300ms;
   transition-property: color, background-color, box-shadow;
@@ -168,7 +180,7 @@ form button {
   align-items: center;
   outline: none;
   justify-content: center;
-  border: 1px solid rgb(130, 130, 130);
+  border: 1px solid #AAAAAA;
   border-radius: 30px;
 }
 
@@ -177,7 +189,7 @@ form button {
 }
 
 .customCheckBox .inner {
-  font-size: 12px;
+  font-size: 0.8vw;
   pointer-events: none;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 300ms;
@@ -190,35 +202,55 @@ form button {
 }
 
 .customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox {
-  background-color: gold;
+  background-color: #FFF04B;
   color: black;
 }
 
 .information {
-  font-weight: bold;
+  font-family: "nexa bold";
+  font-weight: 600;
   margin: 0;
   margin-top: 4px;
-  font-size: 12px;
+  font-size: 1vw;
 }
 .information,
 .information a {
-  color: gold;
+  color: #FFF04B;
   text-decoration: none;
 }
 
 .information-title {
-  color: rgb(130, 130, 130);
+  color: #AAAAAA;
   margin: 0;
   margin-top: 30px;
-  filter: brightness(150%);
-  font-size: 12px;
+  font-size: 1vw;
+  font-weight: bold;
 }
 
 .map-cont {
+  position: relative;
+}
+.map-cont img {
   position: absolute;
   margin-left: 10vw;
-  margin-top: 14vw;
+  margin-top: 14.5vw;
+  width: 12vw;
+  height: 12vw;
   border-radius: 1.5rem;
+  background: #FFF04B;
+}
+.map-cont p {
+  position: absolute;
+  margin-left: 12.8vw;
+  margin-top: 20vw;
+  text-wrap: nowrap;
+  font-size: 0.8vw;
+  color: #FFF04B;
+  text-decoration: underline;
+  text-underline-offset: 0.3vw;
+}
+.map-cont a {
+  outline: 0;
 }
 
 @media screen and (max-width: 479px) {
@@ -234,13 +266,42 @@ form button {
   }
   form label {
     font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+  form input {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  form textarea {
+    font-size: 1rem;
   }
   form button {
     font-size: 1.2rem;
   }
+  form .customCheckBox .inner {
+    font-size: 14px;
+  }
+  form .information,
+  form .information-title {
+    font-size: 1.2rem;
+  }
   .map-cont {
+    padding: 1rem;
+  }
+  .map-cont img {
     position: static;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
     margin: 0;
-    margin-left: 2rem;
+  }
+  .map-cont p {
+    margin: 0;
+    margin-left: -13.5vw;
+    margin-top: -2vw;
+    font-size: 5vw;
+    text-underline-offset: 1.5vw;
+    transform: translate(-50%, -50%);
+    inset: 50%;
   }
 }/*# sourceMappingURL=contact-us.css.map */
