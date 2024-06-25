@@ -180,6 +180,35 @@ header .active {
   transition: filter 0.3s;
 }
 
+#myCarousel {
+  display: inline;
+  width: 100%;
+  height: 200px;
+  --f-progress-color: none;
+}
+#myCarousel .f-carousel__viewport {
+  height: auto;
+}
+#myCarousel .f-carousel__nav {
+  display: none;
+}
+#myCarousel .f-carousel__dots {
+  gap: 1rem;
+}
+#myCarousel .f-carousel__dots button {
+  color: #FFF04B;
+  margin-top: -5rem;
+}
+#myCarousel .f-carousel__dots button span {
+  width: 100%;
+  height: 2px;
+  border-radius: 0;
+}
+#myCarousel img {
+  width: 100%;
+  height: 400px;
+}
+
 @media screen and (min-width: 480px) and (max-width: 1023px) {
   .item span {
     margin-left: 4vw;
