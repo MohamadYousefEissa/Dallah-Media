@@ -7,6 +7,13 @@
   font-family: "nexa bold";
   src: url(../fonts/Nexa-Heavy.ttf);
 }
+#bottom-bar, #box {
+  background: url(../images/bg-content-noise.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 body {
   background: black url("../images/bg.jpg") center no-repeat;
   background-size: cover;
@@ -49,7 +56,6 @@ header .active {
   height: 30vw;
   margin-top: 5vw;
   color: #AAAAAA;
-  background: rgb(40, 40, 40);
   border-radius: 1.5rem 1.5rem 0 0;
   padding: 3vw 1vw;
   overflow-y: scroll;
@@ -59,13 +65,13 @@ header .active {
 }
 
 #bottom-bar {
-  background: rgb(40, 40, 40);
   border-radius: 0 0 1.5rem 1.5rem;
 }
 #bottom-bar ul {
   display: flex;
   align-items: center;
   padding: 0.5vw 1.5rem;
+  flex-wrap: wrap;
 }
 #bottom-bar a {
   color: white;
@@ -92,8 +98,8 @@ header .active {
   }
 }
 @media screen and (max-width: 374px) {
-  header .active {
-    font-weight: normal;
+  header {
+    flex-wrap: wrap;
   }
 }
 .active-title {
@@ -105,26 +111,32 @@ header .active {
   font-size: 5vw;
   color: #555555;
   transition: color 0.3s;
+  text-wrap: nowrap;
   cursor: pointer;
 }
 #titleContent span:hover {
   color: #FFF04B;
 }
 
-article {
+#articleContent {
+  width: 35%;
+}
+#articleContent article {
   margin-bottom: 5vw;
   font-size: 0.8vw;
 }
-article p {
+#articleContent article p {
   font-family: "Anek Devanagari", sans-serif;
 }
-article h6 {
+#articleContent article h6 {
   font-size: 0.8vw;
   font-weight: bold;
+  font-family: "nexa bold";
 }
-
-#articleContent {
-  width: 35%;
+#articleContent img {
+  width: 4vw;
+  margin-left: 0.3vw;
+  margin-top: -1.5vw;
 }
 
 #titleContent {
@@ -150,19 +162,24 @@ article h6 {
     width: 100%;
     margin-top: 3rem;
   }
+  #articleContent img {
+    width: 60px;
+    margin-left: 0;
+    margin-top: -1.5rem;
+  }
+  #articleContent article {
+    margin-bottom: 5vw;
+    font-size: 1rem;
+  }
+  #articleContent article h6 {
+    font-size: 1rem;
+  }
   #titleContent {
     width: 100%;
   }
   #titleContent span {
     font-size: 2rem;
     text-wrap: nowrap;
-  }
-  article {
-    margin-bottom: 5vw;
-    font-size: 1rem;
-  }
-  article h6 {
-    font-size: 1rem;
   }
   #bottom-bar ul {
     padding: 1rem 1rem;

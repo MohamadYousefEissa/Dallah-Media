@@ -33,6 +33,11 @@
         margin-bottom: 2rem;
     }
 
+    h6 {
+        font-family: $font-primary-bold;
+        font-weight: bold;
+    }
+
     h4 {
         color: $text-sec-25;
         font-weight: bold;
@@ -42,7 +47,7 @@
         color: $text-sec;
 
         p {
-            font-family: "Anek Devanagari", sans-serif;
+            font-family: $font-sec;
         }
     }
 
@@ -80,7 +85,7 @@
         position: absolute;
         cursor: pointer;
         color: $text-sec-25;
-        font-family: "Anek Devanagari", sans-serif;
+        font-family: $font-sec;
     }
 
     img {

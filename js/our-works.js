@@ -1,51 +1,51 @@
 const data = [
   {
-    title: "title123",
-    imgSrc: "./images/thumb1.jpg",
-    youtubeLink:
-      "https://www.youtube.com/embed/eo5LWKHzgXE?si=JIY8Y4hF1aqWxuBP",
+    title: "gmcqatar: the sierra at4",
+    label: "the spirit of freedom",
+    imgSrc: "./images/our works/1-gmcqatar.jpg",
+    youtubeLink: "https://youtube.com/embed/eo5LWKHzgXE",
     article:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
+      "To promote the GMC Sierra AT4 (Single Cab), we created a compelling TVC titled ‘The Spirit of Freedom' for Mannai Auto. Filmed at horse stables and the desert, the TVC featured stunning visuals of the Sierra AT4 alongside a horse, symbolizing freedom and adventure.</br></br>The production combined epic and emotional storytelling, with beauty shots of the stables and dynamic desert scenes. We used a single talent, a stunt driver, and a stunt horse rider to bring the story to life, complemented by a powerful Arabic voiceover and a thematic soundtrack. This strategic, all-in-one-day shoot effectively highlighted the Sierra AT4’s versatility and appeal to Qatari buyers, blending lifestyle imagery with practical features.",
   },
   {
-    title: "title2",
-    imgSrc: "./images/thumb2.jpg",
-    youtubeLink:
-      "https://www.youtube.com/embed/eo5LWKHzgXE?si=JIY8Y4hF1aqWxuBP",
+    title: "dhmqatar: what makes a great friend?",
+    label: "#qnd2023",
+    imgSrc: "./images/our works/2-qnd2023.jpg",
+    youtubeLink: "https://www.youtube.com/embed/UbeLdOCO94I",
     article:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
+      "To Celebrate Qatar National Day 2023, we went the unconventional way to think differently. In this video, we’ve highlighted friendship, and the parallelism that the little Qatari girl has with the teddy bear - her best friend – to the relationship of Qatar & Dallah Holding Media, as they both #growtogether",
   },
   {
-    title: "title3",
-    imgSrc: "./images/thumb3.jpg",
-    youtubeLink:
-      "https://www.youtube.com/embed/eo5LWKHzgXE?si=JIY8Y4hF1aqWxuBP",
+    title: "afc asian cup: 100 days to go",
+    label: "dooh & social media",
+    imgSrc: "./images/our works/3-afc-100dtg.jpg",
+    youtubeLink: "https://www.youtube.com/embed/eo5LWKHzgXE",
     article:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
+      "With 100 days to go to Asia’s most prestigious men’s tournament, the Asian Football Confederation (AFC) and the AFC Asian Cup Qatar 2023™ Local Organising Committee (LOC) unveiled the official slogan of the competition: Hayya Asia. We were given the opportunity to create and implement all communication on multiple mediums. Our work included social media, digital, outdoor, print, and DOOH campaigns.",
   },
   {
-    title: "title4",
-    imgSrc: "./images/thumb4.jpg",
-    youtubeLink:
-      "https://www.youtube.com/embed/eo5LWKHzgXE?si=JIY8Y4hF1aqWxuBP",
+    title: "qfa: afc 2027 bidding nation qatar",
+    label: "ribbons celebrating our gift to asia",
+    imgSrc: "./images/our works/4-afc-bid2027.jpg",
+    youtubeLink: "https://www.youtube.com/embed/cgMlgSwLPNI",
     article:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
+      "The concept of the emblem reveal film is focused on “Ribbons celebrating our gift to Asia”. Qatar is a spectacular land where bleeding-edge innovation, sophisticated technology, and visionary architecture can be witnessed virtually everywhere. However, with every new step into the future, we do not forget to pay homage to the deep fabric of our culture as it nourishes our dreams and our vision for an ever-evolving Qatar.Our culture is the ribbon wrapping Qatar's celebration gift to Asia: The 2027 AFC Asian Cup. The video is a mix of stock footage, stock images edited and animated, along with CGI.",
   },
   {
-    title: "title5",
-    imgSrc: "./images/thumb5.jpg",
-    youtubeLink:
-      "https://www.youtube.com/embed/eo5LWKHzgXE?si=JIY8Y4hF1aqWxuBP",
+    title: "qafco: the vikings have landed",
+    label: "a qafco story",
+    imgSrc: "./images/our works/5-qafco-vikings.jpg",
+    youtubeLink: "https://www.youtube.com/embed/49TF1v6y6nU",
     article:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
+      "Made for QAFCO’s 50th joint venture anniversary with Norwegian counterpart, Yara. This is a film that portrays a fictitious Viking arrival on the shores of Qatar, and a narrative that symbolises the age-old bond between Qatar and Norway. A beautifully-filmed suspense drama, with historically-accurate production design and brilliantly-integrated CGI, we sail with Viking boats, succumb to a sandstorm and witness the tale of a kinship like no other.",
   },
   {
-    title: "title6",
-    imgSrc: "./images/thumb6.jpg",
-    youtubeLink:
-      "https://www.youtube.com/embed/eo5LWKHzgXE?si=JIY8Y4hF1aqWxuBP",
+    title: "qafco: the key",
+    label: "50th anniversary",
+    imgSrc: "./images/our works/6-qafco-the key.jpg",
+    youtubeLink: "https://www.youtube.com/embed/vODSZvpaKBQ",
     article:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
+      "Our film plays with time to make it a more emotional, interesting and better visual narrative. An elder Qatari man looks through his old box of work and travel photos and encourages his son to go off and do the same to see the power of QAFCO across the world.We filmed in two locations, Qatar and South Africa, but the film will feel like we’ve visited an abundance of locations around the world:",
   },
 ];
 const box = document.querySelector("#box");
@@ -87,6 +87,7 @@ function renderContent(i) {
             <div class="col-12 col-xl-6">
               <h1>${data[i].title}</h1>
               <article>
+              <h6>${data[i].label}</h6>
                 <p>
                 ${data[i].article}
                 </p>
@@ -100,7 +101,6 @@ function renderContent(i) {
             <div class="col">
               <iframe
                 width="100%"
-                height="100%"
                 src=${data[i].youtubeLink}
                 title="YouTube video player"
                 frameborder="0"

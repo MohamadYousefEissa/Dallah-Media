@@ -7,6 +7,13 @@
   font-family: "nexa bold";
   src: url(../fonts/Nexa-Heavy.ttf);
 }
+#bottom-bar, #box {
+  background: url(../images/bg-content-noise.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 body {
   background: black url("../images/bg.jpg") center no-repeat;
   background-size: cover;
@@ -49,7 +56,6 @@ header .active {
   height: 30vw;
   margin-top: 5vw;
   color: #AAAAAA;
-  background: rgb(40, 40, 40);
   border-radius: 1.5rem 1.5rem 0 0;
   padding: 3vw 1vw;
   overflow-y: scroll;
@@ -59,13 +65,13 @@ header .active {
 }
 
 #bottom-bar {
-  background: rgb(40, 40, 40);
   border-radius: 0 0 1.5rem 1.5rem;
 }
 #bottom-bar ul {
   display: flex;
   align-items: center;
   padding: 0.5vw 1.5rem;
+  flex-wrap: wrap;
 }
 #bottom-bar a {
   color: white;
@@ -92,7 +98,7 @@ header .active {
   }
 }
 @media screen and (max-width: 374px) {
-  header .active {
-    font-weight: normal;
+  header {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=main.css.map */

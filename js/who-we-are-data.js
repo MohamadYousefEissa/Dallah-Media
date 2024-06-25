@@ -1,51 +1,35 @@
 const data = [
   {
-    title: "title1",
-    afterClickTitle: "afterTitle1",
+    title: "about us",
+    afterClickTitle: "since 1988",
     articles: [
       {
-        label: "article1",
-        para: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
-      },
-      {
-        label: "article2",
-        para: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
+        label: "",
+        para: "1988 was a good year for advertising: Dallah Media opened its doors as Qatar’s first outdoor advertising media company. To this day, we’re all about getting your brand the attention it deserves. At every customer touchpoint along the way.",
       },
     ],
-    imgSrc: "./images/thumb1.jpg",
+    imgSrc: "./images/who we are/1-since-1998.jpg",
   },
   {
-    title: "title2",
-    afterClickTitle: "afterTitle2",
+    title: "why us",
+    afterClickTitle: "why not?",
     articles: [
       {
-        label: "article1-v2",
-        para: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
-      },
-      {
-        label: "article2-v2",
-        para: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
+        label: "",
+        para: "We’re more than an agency. We’re an extension of your business. So, think of us as partners in the journey we’re taking together. Sound good? Let’s talk.",
       },
     ],
-    imgSrc: "./images/thumb2.jpg",
+    imgSrc: "./images/who we are/2-why-us.jpg",
   },
   {
-    title: "title3",
-    afterClickTitle: "afterTitle3",
+    title: "partners",
+    afterClickTitle: "power of we",
     articles: [
       {
-        label: "article1-v3",
-        para: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
-      },
-      {
-        label: "article2-v3",
-        para: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
-      },
-      {
-        label: "article3-v3",
-        para: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis distinctio iste itaque vel corrupti. Est ad ratione sapiente, adipisci facilis sit blanditiis deleniti quasi voluptatem sequi similique quia autem!",
+        label: "",
+        para: "We’re a 21st century collective of companies, each with its own area of specialization. Advertising, Experiential Events & Sports Marketing, Digital Printing & Packaging, Events & Exhibitions, Corporate Gifting, Web & Mobile App development, Photography & Videography, even Fine Art Curation. All in all, a fully-integrated, 360-degree service, 24/7.",
       },
     ],
-    imgSrc: "./images/thumb3.jpg",
+    imgSrc: "./images/who we are/3-our-partners.jpg",
   },
 ];

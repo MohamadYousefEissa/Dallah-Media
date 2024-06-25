@@ -28,7 +28,12 @@ form {
         font-weight: 600;
         font-size: 0.8vw;
         cursor: pointer;
+
+        &:not([for]) {
+            cursor: default;
+        }
     }
+
 
     input {
         border: 0;
@@ -113,12 +118,14 @@ form {
 
 .customCheckBoxInput:checked+.customCheckBoxWrapper .customCheckBox {
     background-color: $text-primary;
+    border: 1px solid transparent;
     color: black;
-
+    font-family: $font-primary-bold;
+    font-weight: bold;
 }
 
 .information {
-    font-family: "nexa bold";
+    font-family: $font-primary-bold;
     font-weight: 600;
     margin: 0;
     margin-top: 4px;
@@ -140,8 +147,6 @@ form {
 }
 
 .map-cont {
-    position: relative;
-
     img {
         position: absolute;
         margin-left: 10vw;
@@ -211,6 +216,7 @@ form {
 
     .map-cont {
         padding: 1rem;
+        position: relative;
 
         img {
             position: static;
@@ -221,8 +227,6 @@ form {
         }
 
         p {
-            // margin-left: 6.5rem;
-            // margin-top: -12rem;
             margin: 0;
             margin-left: -13.5vw;
             margin-top: -2vw;
