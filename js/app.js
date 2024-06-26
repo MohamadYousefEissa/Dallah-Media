@@ -1,73 +1,32 @@
-const boxContent = `
-            <div class="d-flex flex-row flex-md-column flex-wrap column-gap-3  gap-md-5" id="titleContent">
-               
-            </div>
-            <div class="d-flex flex-column" id="articleContent">
-          
-            </div>
-            <div>
-                <div class="fixed-img"></div>
-            </div>
-`;
-const box = document.querySelector("#box");
-box.innerHTML = boxContent;
-const titleContent = document.querySelector("#titleContent");
-const articleContent = document.querySelector("#articleContent");
-const image = document.querySelector(".fixed-img");
+const imageCont = document.querySelector(".fixed-img");
+const image = imageCont.querySelector("img");
+const yb = imageCont.querySelector(".yellow-box");
+const span = document.querySelectorAll("#titleContent span");
 
-data.forEach((res, i) => {
-  const span = document.createElement("span");
-  span.innerText = res.title;
-  titleContent.appendChild(span);
-  if (i === 0) {
-    span.innerText = res.afterClickTitle;
-    image.innerHTML = `<img src="${res.imgSrc}" />`;
-    span.classList.add("active-title");
-    res.articles.forEach((article) => {
-      articleContent.innerHTML += `
-          <article>
-          <h6>${article.label}</h6>
-          <p>${article.para}</p>
-          </article>
-          `;
-    });
-  }
-  span.addEventListener("click", () => {
-    unactiveSpans();
-    changeTitle(i, span);
-    changeArticle(i);
-    changeImage(i);
-    span.classList.add("active-title");
-    setTimeout(() => {
-      box.scrollTo({ top: 50, left: 0, behavior: "smooth" });
-    }, 300);
+span.forEach((title, i) => {
+  title.addEventListener("mouseover", () => {
+    title.classList.add("active-title");
+    title.innerText = data[i].afterHover;
+    image.src = data[i].imgSrc;
+    image.classList.remove("hide");
+    yb.classList.add("hide");
+  });
+  title.addEventListener("mouseleave", () => {
+    title.classList.remove("active-title");
+    title.innerText = data[i].title;
+    image.classList.add("hide");
+    yb.classList.remove("hide");
   });
 });
 
-function unactiveSpans() {
-  for (let x = 0; x < data.length; x++) {
-    const span = document.querySelectorAll("#titleContent span")[x];
-    span.innerText = data[x].title;
-    span.classList.remove("active-title");
+const box = document.querySelector("#box");
+const boxHeight = box.scrollHeight - box.getBoundingClientRect().height;
+box.addEventListener("scroll", () => {
+  if (box.scrollTop > boxHeight - 20) {
+    if (window.location.href.includes("who-we-are")) {
+      window.location.href = "./what-we-do.html";
+    } else if (window.location.href.includes("what-we-do")) {
+      window.location.href = "./our-works.html";
+    }
   }
-}
-
-function changeTitle(i, span) {
-  span.innerText = data[i].afterClickTitle;
-}
-
-function changeArticle(i) {
-  articleContent.innerHTML = "";
-  for (article of data[i].articles) {
-    articleContent.innerHTML += `
-    <article>
-    <h6>${article.label}</h6>
-    <p>${article.para}</p>
-    </article>
-    `;
-  }
-}
-
-function changeImage(i) {
-  image.innerHTML = `<img src="${data[i].imgSrc}" />`;
-}
+});

@@ -125,7 +125,8 @@ header .active {
   width: 35%;
 }
 #articleContent article {
-  margin-bottom: 5vw;
+  margin-bottom: 5.6vw;
+  margin-left: 2vw;
   font-size: 0.8vw;
 }
 #articleContent article p {
@@ -133,6 +134,7 @@ header .active {
 }
 #articleContent article h6 {
   font-size: 0.8vw;
+  margin-bottom: 1vw;
   font-weight: bold;
   font-family: "nexa bold";
 }
@@ -146,7 +148,21 @@ header .active {
   width: 40%;
 }
 
-.fixed-img img {
+.fixed-img .hide {
+  visibility: hidden;
+  opacity: 0;
+}
+.fixed-img .yellow-box::before {
+  content: "born in qatar, made for the world";
+  position: absolute;
+  font-family: "nexa bold";
+  font-weight: bold;
+  font-size: 1vw;
+  color: #555555;
+  bottom: 1vw;
+  left: 1vw;
+}
+.fixed-img > * {
   position: absolute;
   margin-left: 10vw;
   margin-top: 9vw;
@@ -154,6 +170,7 @@ header .active {
   height: 12vw;
   border-radius: 1.5rem;
   background: #FFF04B;
+  transition: all 0.3s;
 }
 
 @media screen and (max-width: 479px) {
@@ -186,10 +203,16 @@ header .active {
   #bottom-bar ul {
     padding: 1rem 1rem;
   }
-  .fixed-img img {
-    position: static;
-    margin: 0;
+  .fixed-img .hide {
+    display: none;
+  }
+  .fixed-img .yellow-box {
+    display: none;
+  }
+  .fixed-img > img {
+    position: relative;
     width: 100%;
     height: 100%;
+    margin: 0;
   }
 }/*# sourceMappingURL=slider.css.map */
