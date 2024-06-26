@@ -20,8 +20,8 @@ span.forEach((title, i) => {
 });
 
 const box = document.querySelector("#box");
-const boxHeight = box.scrollHeight - box.getBoundingClientRect().height;
 box.addEventListener("scroll", () => {
+  const boxHeight = box.scrollHeight - box.getBoundingClientRect().height;
   if (box.scrollTop > boxHeight - 20) {
     if (window.location.href.includes("who-we-are")) {
       window.location.href = "./what-we-do.html";
