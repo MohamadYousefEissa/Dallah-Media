@@ -128,6 +128,24 @@
     }
 }
 
+@include responsive("mobile") {
+    .selectedItem iframe {
+        min-height: 220px;
+    }
+
+    #myCarousel {
+        height: 220px;
+
+        .f-carousel__viewport {
+            height: 220px;
+        }
+
+        img {
+            height: 220px;
+        }
+    }
+}
+
 @include responsive("tablet") {
     .item span {
         margin-left: 4vw;

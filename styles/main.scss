@@ -119,6 +119,12 @@ header {
   }
 }
 
+@include responsive("tablet") {
+  #box {
+    height: 40vw;
+  }
+}
+
 @media screen and (max-width:480px) {
   #box {
     height: 400px;

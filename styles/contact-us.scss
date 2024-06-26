@@ -233,3 +233,15 @@ form {
         }
     }
 }
+
+@include responsive("tablet") {
+    .map-cont {
+        img {
+            margin-top: 25vw;
+        }
+
+        p {
+            margin-top: 30.5vw;
+        }
+    }
+}

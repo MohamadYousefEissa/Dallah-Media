@@ -84,6 +84,11 @@ header .active {
   color: #FFF04B;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  #box {
+    height: 40vw;
+  }
+}
 @media screen and (max-width: 480px) {
   #box {
     height: 400px;
@@ -208,6 +213,20 @@ header .active {
   height: 400px;
 }
 
+@media screen and (max-width: 479px) {
+  .selectedItem iframe {
+    min-height: 220px;
+  }
+  #myCarousel {
+    height: 220px;
+  }
+  #myCarousel .f-carousel__viewport {
+    height: 220px;
+  }
+  #myCarousel img {
+    height: 220px;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 1023px) {
   .item span {
     margin-left: 4vw;

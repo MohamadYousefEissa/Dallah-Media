@@ -84,6 +84,11 @@ header .active {
   color: #FFF04B;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  #box {
+    height: 40vw;
+  }
+}
 @media screen and (max-width: 480px) {
   #box {
     height: 400px;
@@ -314,5 +319,13 @@ form button {
     text-underline-offset: 1.5vw;
     transform: translate(-50%, -50%);
     inset: 50%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .map-cont img {
+    margin-top: 25vw;
+  }
+  .map-cont p {
+    margin-top: 30.5vw;
   }
 }/*# sourceMappingURL=contact-us.css.map */
