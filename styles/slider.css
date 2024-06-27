@@ -140,7 +140,6 @@ header .active {
 }
 #articleContent article {
   margin-bottom: 6vw;
-  margin-left: 8vw;
   font-size: 0.8vw;
 }
 #articleContent article p {
@@ -178,8 +177,8 @@ header .active {
 }
 .fixed-img > * {
   position: absolute;
-  right: 5vw;
-  margin-top: 14vw;
+  right: 4vw;
+  margin-top: 15.5vw;
   width: 12vw;
   height: 12vw;
   border-radius: 1.5rem;

@@ -6,7 +6,7 @@ const data = [
     youtubeLink: "https://youtube.com/embed/eo5LWKHzgXE",
     mode: "video",
     article:
-      "To promote the GMC Sierra AT4 (Single Cab), we created a compelling TVC titled ‘The Spirit of Freedom' for Mannai Auto. Filmed at horse stables and the desert, the TVC featured stunning visuals of the Sierra AT4 alongside a horse, symbolizing freedom and adventure.</br></br>The production combined epic and emotional storytelling, with beauty shots of the stables and dynamic desert scenes. We used a single talent, a stunt driver, and a stunt horse rider to bring the story to life, complemented by a powerful Arabic voiceover and a thematic soundtrack. This strategic, all-in-one-day shoot effectively highlighted the Sierra AT4’s versatility and appeal to Qatari buyers, blending lifestyle imagery with practical features.",
+      "To promote the GMC Sierra AT4 (Single Cab), we created a compelling TVC titled ،The Spirit of Freedom' for Mannai Auto. Filmed at horse stables and the desert, the TVC featured stunning visuals of the Sierra AT4 alongside a horse, symbolizing freedom and adventure.</br></br>The production combined epic and emotional storytelling, with beauty shots of the stables and dynamic desert scenes. We used a single talent, a stunt driver, and a stunt horse rider to bring the story to life, complemented by a powerful Arabic voiceover and a thematic soundtrack. This strategic, all-in-one-day shoot effectively highlighted the Sierra AT4's versatility and appeal to Qatari buyers, blending lifestyle imagery with practical features.",
   },
   {
     title: "dhmqatar: what makes a great friend?",
@@ -15,7 +15,7 @@ const data = [
     youtubeLink: "https://www.youtube.com/embed/UbeLdOCO94I",
     mode: "video",
     article:
-      "To Celebrate Qatar National Day 2023, we went the unconventional way to think differently. In this video, we’ve highlighted friendship, and the parallelism that the little Qatari girl has with the teddy bear - her best friend – to the relationship of Qatar & Dallah Holding Media, as they both #growtogether",
+      "To Celebrate Qatar National Day 2023, we went the unconventional way to think differently. In this video, we've highlighted friendship, and the parallelism that the little Qatari girl has with the teddy bear - her best friend - to the relationship of Qatar & Dallah Holding Media, as they both #growtogether",
   },
   {
     title: "afc asian cup: 100 days to go",
@@ -32,7 +32,7 @@ const data = [
       "./images/our works/100dtg-6.jpg",
     ],
     article:
-      "With 100 days to go to Asia’s most prestigious men’s tournament, the Asian Football Confederation (AFC) and the AFC Asian Cup Qatar 2023™ Local Organising Committee (LOC) unveiled the official slogan of the competition: Hayya Asia. We were given the opportunity to create and implement all communication on multiple mediums. Our work included social media, digital, outdoor, print, and DOOH campaigns.",
+      "With 100 days to go to Asia's most prestigious men's tournament, the Asian Football Confederation (AFC) and the AFC Asian Cup Qatar 2023™ Local Organising Committee (LOC) unveiled the official slogan of the competition: Hayya Asia. We were given the opportunity to create and implement all communication on multiple mediums. Our work included social media, digital, outdoor, print, and DOOH campaigns.",
   },
   {
     title: "qfa: afc 2027 bidding nation qatar",
@@ -50,7 +50,7 @@ const data = [
     youtubeLink: "https://www.youtube.com/embed/49TF1v6y6nU",
     mode: "video",
     article:
-      "Made for QAFCO’s 50th joint venture anniversary with Norwegian counterpart, Yara. This is a film that portrays a fictitious Viking arrival on the shores of Qatar, and a narrative that symbolises the age-old bond between Qatar and Norway. A beautifully-filmed suspense drama, with historically-accurate production design and brilliantly-integrated CGI, we sail with Viking boats, succumb to a sandstorm and witness the tale of a kinship like no other.",
+      "Made for QAFCO's 50th joint venture anniversary with Norwegian counterpart, Yara. This is a film that portrays a fictitious Viking arrival on the shores of Qatar, and a narrative that symbolises the age-old bond between Qatar and Norway. A beautifully-filmed suspense drama, with historically-accurate production design and brilliantly-integrated CGI, we sail with Viking boats, succumb to a sandstorm and witness the tale of a kinship like no other.",
   },
   {
     title: "qafco: the key",
@@ -59,7 +59,7 @@ const data = [
     youtubeLink: "https://www.youtube.com/embed/vODSZvpaKBQ",
     mode: "video",
     article:
-      "Our film plays with time to make it a more emotional, interesting and better visual narrative. An elder Qatari man looks through his old box of work and travel photos and encourages his son to go off and do the same to see the power of QAFCO across the world.We filmed in two locations, Qatar and South Africa, but the film will feel like we’ve visited an abundance of locations around the world:",
+      "Our film plays with time to make it a more emotional, interesting and better visual narrative. An elder Qatari man looks through his old box of work and travel photos and encourages his son to go off and do the same to see the power of QAFCO across the world.We filmed in two locations, Qatar and South Africa, but the film will feel like we've visited an abundance of locations around the world:",
     list: [
       "Qatar - Plantation",
       "Qatar - Farmhouse / Conservatory",
@@ -214,7 +214,7 @@ function modeOfCase(mode, i) {
           data-fancybox="gallery"
           href="${image}"
           >
-          <img class="inf-main-img" src="${image}" alt="horse" />
+          <img class="inf-main-img" src="${image}" alt="image" />
         </a>
       `;
     });
