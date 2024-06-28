@@ -22,7 +22,7 @@ span.forEach((title, i) => {
 const box = document.querySelector("#box");
 box.addEventListener("scroll", () => {
   const boxHeight = box.scrollHeight - box.getBoundingClientRect().height;
-  if (box.scrollTop > boxHeight - 20) {
+  if (box.scrollTop > boxHeight - 10) {
     if (window.location.href.includes("who-we-are")) {
       window.location.href = "./what-we-do.html";
     } else if (window.location.href.includes("what-we-do")) {
