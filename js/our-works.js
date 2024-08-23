@@ -21,11 +21,12 @@ function forSlider() {
 
 const box = document.querySelector("#box");
 const itemContainer = box.querySelectorAll(".item-container");
+const itemBox = box.querySelectorAll(".item-container > div > div");
 const itemContent = box.querySelectorAll(".item-content");
 const casesContainer = document.querySelectorAll("#cases-container");
 
 let activePage = 0;
-itemContainer.forEach((item, i) => {
+itemBox.forEach((item, i) => {
   item.addEventListener("click", () => {
     hideItems();
     renderContent(i);
@@ -42,14 +43,18 @@ function renderContent(i) {
 }
 
 function hideItems() {
-  box.classList.remove("row-cols-1", "row-cols-md-2", "row-cols-xl-3");
+  box.children[0].classList.remove(
+    "row-cols-1",
+    "row-cols-md-2",
+    "row-cols-xl-3"
+  );
   itemContainer.forEach((item) => {
     item.classList.add("d-none");
   });
 }
 
 function showItems() {
-  box.classList.add("row-cols-1", "row-cols-md-2", "row-cols-xl-3");
+  box.children[0].classList.add("row-cols-1", "row-cols-md-2", "row-cols-xl-3");
   itemContent[activePage].classList.add("d-none");
   itemContainer.forEach((item) => {
     item.classList.remove("d-none");

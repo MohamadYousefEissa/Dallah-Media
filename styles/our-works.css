@@ -110,8 +110,15 @@ header .active {
     flex-wrap: wrap;
   }
 }
+section {
+  display: inline;
+}
+
 .item {
   margin-bottom: 4rem;
+  padding: 0 10px;
+}
+.item > div {
   cursor: pointer;
 }
 .item span {
@@ -186,8 +193,6 @@ header .active {
 
 #myCarousel {
   display: inline;
-  width: 100%;
-  height: 200px;
 }
 #myCarousel .f-carousel__viewport {
   height: auto;
@@ -200,7 +205,6 @@ header .active {
 }
 #myCarousel .f-carousel__dots button {
   color: #FFF04B;
-  margin-top: -5rem;
 }
 #myCarousel .f-carousel__dots button span {
   width: 100%;
@@ -212,6 +216,27 @@ header .active {
   height: 400px;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 480px) {
+  #myCarousel {
+    height: 280px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #myCarousel .f-carousel__viewport {
+    width: 500px;
+    height: 280px;
+  }
+  #myCarousel img {
+    width: 500px;
+    height: 280px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .item span {
+    margin-left: 4vw;
+  }
+}
 @media screen and (max-width: 479px) {
   .selectedItem iframe {
     min-height: 220px;
@@ -224,10 +249,5 @@ header .active {
   }
   #myCarousel img {
     height: 220px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 1023px) {
-  .item span {
-    margin-left: 4vw;
   }
 }/*# sourceMappingURL=our-works.css.map */

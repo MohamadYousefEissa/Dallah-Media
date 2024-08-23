@@ -1,152 +1,169 @@
 @use "./main.scss" as *;
-
+section {
+  display: inline;
+}
 .item {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
+  padding: 0 10px;
+  & > div {
     cursor: pointer;
+  }
 
-    span {
-        color: $text-primary;
-        margin-bottom: 10px;
-        font-weight: bold;
-        width: 100%;
-        font-size: 14px;
-    }
+  span {
+    color: $text-primary;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 100%;
+    font-size: 14px;
+  }
 
-    img {
-        position: relative;
-        width: 320px;
-        height: 250px;
-        border-radius: 15px;
-    }
+  img {
+    position: relative;
+    width: 320px;
+    height: 250px;
+    border-radius: 15px;
+  }
 }
 
 .selectedItem {
-    h1 {
-        color: $text-primary;
-        font-weight: bold;
-        margin-bottom: 2rem;
-    }
+  h1 {
+    color: $text-primary;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
 
-    h6 {
-        font-family: $font-primary-bold;
-        font-weight: bold;
-    }
+  h6 {
+    font-family: $font-primary-bold;
+    font-weight: bold;
+  }
 
-    h4 {
-        color: $text-sec-25;
-        font-weight: bold;
-    }
+  h4 {
+    color: $text-sec-25;
+    font-weight: bold;
+  }
 
-    article {
-        color: $text-sec;
+  article {
+    color: $text-sec;
 
-        p {
-            font-family: $font-sec;
-        }
+    p {
+      font-family: $font-sec;
     }
+  }
 
-    .other-item {
-        width: 200px;
-        height: 160px;
-        border-radius: 20px;
-        background: red;
-    }
+  .other-item {
+    width: 200px;
+    height: 160px;
+    border-radius: 20px;
+    background: red;
+  }
 
-    iframe {
-        min-height: 450px;
-    }
+  iframe {
+    min-height: 450px;
+  }
 }
 
 #cases-container {
-    div {
-        position: relative;
-        border-radius: 20px;
+  div {
+    position: relative;
+    border-radius: 20px;
 
-        &:hover {
-            img {
-                filter: brightness(100%);
-            }
+    &:hover {
+      img {
+        filter: brightness(100%);
+      }
 
-            span {
-                color: $text-primary;
-            }
-        }
+      span {
+        color: $text-primary;
+      }
     }
+  }
 
-    span {
-        left: 10px;
-        bottom: 10px;
-        position: absolute;
-        cursor: pointer;
-        color: $text-sec-25;
-        font-family: $font-sec;
-    }
+  span {
+    left: 10px;
+    bottom: 10px;
+    position: absolute;
+    cursor: pointer;
+    color: $text-sec-25;
+    font-family: $font-sec;
+  }
 
-    img {
-        width: 200px;
-        height: 160px;
-        border-radius: 20px;
-        filter: brightness(40%);
-        cursor: pointer;
-        transition: filter 0.3s;
-    }
-
+  img {
+    width: 200px;
+    height: 160px;
+    border-radius: 20px;
+    filter: brightness(40%);
+    cursor: pointer;
+    transition: filter 0.3s;
+  }
 }
 
 #myCarousel {
-    display: inline;
+  display: inline;
+
+  .f-carousel__viewport {
+    height: auto;
+  }
+
+  .f-carousel__nav {
+    display: none;
+  }
+
+  .f-carousel__dots {
+    gap: 1rem;
+    button {
+      color: $text-primary;
+
+      span {
+        width: 100%;
+        height: 2px;
+        border-radius: 0;
+      }
+    }
+  }
+
+  img {
     width: 100%;
-    height: 200px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 480px) {
+  #myCarousel {
+    height: 280px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
     .f-carousel__viewport {
-        height: auto;
-    }
-
-    .f-carousel__nav {
-        display: none;
-    }
-
-    .f-carousel__dots {
-        gap: 1rem;
-
-        button {
-            color: $text-primary;
-            margin-top: -5rem;
-
-            span {
-                width: 100%;
-                height: 2px;
-                border-radius: 0;
-            }
-        }
+      width: 500px;
+      height: 280px;
     }
 
     img {
-        width: 100%;
-        height: 400px;
+      width: 500px;
+      height: 280px;
     }
+  }
+}
+@include responsive("tablet") {
+  .item span {
+    margin-left: 4vw;
+  }
 }
 
 @include responsive("mobile") {
-    .selectedItem iframe {
-        min-height: 220px;
+  .selectedItem iframe {
+    min-height: 220px;
+  }
+
+  #myCarousel {
+    height: 220px;
+
+    .f-carousel__viewport {
+      height: 220px;
     }
 
-    #myCarousel {
-        height: 220px;
-
-        .f-carousel__viewport {
-            height: 220px;
-        }
-
-        img {
-            height: 220px;
-        }
+    img {
+      height: 220px;
     }
-}
-
-@include responsive("tablet") {
-    .item span {
-        margin-left: 4vw;
-    }
+  }
 }
